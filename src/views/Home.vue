@@ -1,15 +1,18 @@
 
 <template>
-  <div class="home flex flex-col items-center justify-center min-h-screen text-white text-center px-4">
-    <h1 class="text-4xl mb-2">HI THERE 👋, I'M</h1>
-    <h2 class="text-6xl mb-2 font-bold">kehinde.</h2>
-    <p class="text-lg mb-4 font-bold">SOFTWARE DEVELOPER</p>
-    <p class="text-sm mb-6">I'm a design minded front-end developer based in Lagos, Nigeria.</p>
-    <button
-      class="bg-blue-800 text-white px-6 py-2 text-lg font-semibold rounded"
-      v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }"
-    >
-      HIRE ME
+  <div class="home flex flex-col items-start justify-center min-h-screen text-blue-800 px-8 bg-blue mt-10">
+    <section class="intro mb-16">
+      <p class="text-lg">Hi, my name is</p>
+      <h1 class="text-6xl font-bold text-blue-700">Kehinde Amusa.</h1>
+      <h3 class="text-5xl font-bold text-gray-800">I embrace the digital world.</h3>
+      <p class="text-lg mt-4 text-blue-700">
+        I can help you build a product, feature, or website. Look through my work and experience!
+        <p>If you are interested and need help on a project,
+         I am <a href="#" class="text-blue-800 underline">available for hire</a>.</p>
+      </p>
+    </section>
+    <button class="bg-blue-800 text-white px-6 py-2 text-lg font-semibold rounded mb-12">
+      Check my work
     </button>
 
     <About />
@@ -38,6 +41,18 @@ export default {
 
 <style scoped>
 .home {
-  text-align: center;
+  text-align: left;
+}
+
+.intro h1 {
+  color: #1e00ff; /* Custom blue color */
+}
+
+.intro h3 {
+  color: #000000; /* Custom gray color */
+}
+
+.intro p {
+  color: #000000; /* Custom gray color */
 }
 </style>

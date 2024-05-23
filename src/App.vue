@@ -1,6 +1,6 @@
-
+<!-- src/App.vue -->
 <template>
-  <div id="app" class="min-h-screen flex flex-col bg-gradient-to-r from-purple-800 via-pink-800 to-red-800">
+  <div id="app" class="min-h-screen flex flex-col bg-white text-blue-900">
     <nav class="bg-black text-white py-3 fixed w-full z-20">
       <div class="container mx-auto flex justify-between items-center px-4">
         <div class="text-2xl font-bold">Ke.</div>
