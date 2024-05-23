@@ -1,4 +1,4 @@
-
+<!-- src/views/Home.vue -->
 <template>
   <div class="home flex flex-col items-start justify-center min-h-screen text-blue-800 px-8 bg-blue mt-10">
     <section class="intro mb-16">
@@ -15,10 +15,14 @@
       Check my work
     </button>
 
-    <About />
-    <Projects />
-    <Skills />
-    <Contact />
+    <section class="w-full flex justify-center">
+      <div class="w-full max-w-4xl">
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -54,5 +58,13 @@ export default {
 
 .intro p {
   color: #000000; /* Custom gray color */
+}
+
+section {
+  width: 100%;
+}
+
+section div {
+  margin: 0 auto;
 }
 </style>

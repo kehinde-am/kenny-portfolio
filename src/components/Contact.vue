@@ -1,7 +1,7 @@
-<!-- src/components/Contact.vue -->
+
 <template>
   <section id="contact" class="py-20">
-    <h2 class="text-4xl font-bold text-center text-white">Contact</h2>
+    <h2 class="text-4xl font-bold text-center text-blue-700">Contact</h2>
     <p class="text-center text-white mt-4">I'd love to hear from you! Fill out the form below to get in touch.</p>
     <div class="max-w-md mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg">
       <form @submit.prevent="submitForm">
@@ -17,7 +17,7 @@
           <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
           <textarea id="message" v-model="form.message" class="w-full px-3 py-2 border rounded-lg text-gray-900" rows="5" required></textarea>
         </div>
-        <button type="submit" class="bg-purple-800 text-white px-4 py-2 rounded-lg font-bold">Send Message</button>
+        <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded-lg font-bold">Send Message</button>
       </form>
     </div>
   </section>
@@ -37,7 +37,7 @@ export default defineComponent({
 
     const submitForm = () => {
       alert(`Message Sent! \nName: ${form.value.name} \nEmail: ${form.value.email} \nMessage: ${form.value.message}`);
-      // Here you can add your form submission logic (e.g., send the form data to a server)
+      
     };
 
     return {

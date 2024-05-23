@@ -1,4 +1,4 @@
-<!-- src/App.vue -->
+
 <template>
   <div id="app" class="min-h-screen flex flex-col bg-white text-blue-900">
     <nav class="bg-black text-white py-3 fixed w-full z-20">
@@ -6,7 +6,7 @@
         <div class="text-2xl font-bold">Ke.</div>
         <ul class="hidden md:flex space-x-6">
           <li>
-            <a href="#home" class="hover:text-blue-800">HOME</a>
+            <a href="#" class="hover:text-blue-800">HOME</a>
           </li>
           <li>
             <a href="#about" class="hover:text-blue-800">ABOUT</a>

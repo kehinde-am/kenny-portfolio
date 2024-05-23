@@ -1,10 +1,10 @@
 <!-- src/components/About.vue -->
 <template>
-  <section id="about" class="py-20 bg-white text-gray-900">
+  <section id="about" class="py-20 bg-white text-blue-700">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+      <h2 class="text-4xl font-bold mb-8 text-blue-700">About Me</h2>
       <div class="flex flex-col md:flex-row items-center md:items-start">
-        <div class="md:w-2/3">
+        <div class="md:w-2/3 text-black">
           <p class="mb-4">
             I am Okoye Charles, a frontend/backend developer based in Nigeria. I spend most of my time designing graphics, coding up things for the web, and learning algorithms.
           </p>
@@ -14,13 +14,24 @@
           <p class="mb-4">
             If my portfolio interests you, or you need an enthusiastic developer on your team, I am <a href="#" class="text-blue-600 underline">available for hire</a>.
           </p>
+          <p class="mb-4">
+            Here is an up-to-date list of my most recently used technologies:
+          </p>
+          <ul class="list-disc list-inside ml-4 mb-4">
+            <li>Javascript (ES6+)/TypeScript</li>
+            <li>React</li>
+            <li>Next.js 13</li>
+            <li>Express.js (MongoDB)</li>
+            <li>Firebase</li>
+            <li>Ruby on Rails</li>
+          </ul>
           <p class="text-sm mt-8">
             DO YOU HAVE A COOL WEBSITE OR APPLICATION IN MIND?<br>
-            I WOULD LOVE TO <a href="#" class="text-blue-600 underline">HEAR ABOUT IT</a>
+            I WOULD LOVE TO <a href="#contact" class="text-blue-600 underline">HEAR ABOUT IT</a>
           </p>
         </div>
         <div class="md:w-1/3 mt-8 md:mt-0 md:ml-8">
-          <img src="../assets/munchi.JPG" alt="Profile Picture" class="rounded-lg shadow-lg">
+          <img src="../assets/munchi.jpg" alt="Profile Picture" class="rounded-lg shadow-lg w-full h-auto max-w-xs">
         </div>
       </div>
     </div>
@@ -38,9 +49,16 @@ section {
   padding: 4rem 0;
 }
 h2 {
-  border-bottom: 2px solid #00f;
+  border-bottom: 2px solid #1e00ff;
   display: inline-block;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
+  color: #1e00ff;
+}
+p, ul {
+  color: #000;
+}
+a {
+  color: #1e00ff;
 }
 </style>

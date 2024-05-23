@@ -1,7 +1,7 @@
 <!-- src/components/Skills.vue -->
 <template>
   <section id="skills" class="py-20">
-    <h2 class="text-4xl font-bold text-center text-white">Skills</h2>
+    <h2 class="text-4xl font-bold text-center text-blue-700">Skills.</h2>
     <p class="text-center text-white mt-4">Details about my skills...</p>
   </section>
 </template>
