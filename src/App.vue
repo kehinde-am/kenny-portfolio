@@ -1,24 +1,24 @@
-<!-- src/App.vue -->
+
 <template>
   <div id="app" class="min-h-screen flex flex-col bg-gradient-to-r from-purple-800 via-pink-800 to-red-800">
     <nav class="bg-black text-white py-3 fixed w-full z-20">
-      <div class="container mx-auto flex justify-between items-center">
+      <div class="container mx-auto flex justify-between items-center px-4">
         <div class="text-2xl font-bold">Ke.</div>
         <ul class="hidden md:flex space-x-6">
           <li>
-            <a href="#" class="hover:text-blue-800" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">HOME</a>
+            <a href="#home" class="hover:text-blue-800">HOME</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-800" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">ABOUT</a>
+            <a href="#about" class="hover:text-blue-800">ABOUT</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-800" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">PROJECTS</a>
+            <a href="#projects" class="hover:text-blue-800">PROJECTS</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-800" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">SKILLS</a>
+            <a href="#skills" class="hover:text-blue-800">SKILLS</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-800" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">CONTACT</a>
+            <a href="#contact" class="hover:text-blue-800">CONTACT</a>
           </li>
         </ul>
         <div class="md:hidden flex items-center">
@@ -32,41 +32,28 @@
       <div
         v-if="menuOpen"
         v-motion :initial="{ opacity: 0 }" :animate="{ opacity: 1 }" :exit="{ opacity: 0 }"
-        class="md:hidden absolute top-0 left-0 w-full bg-black text-white z-10"
+        class="md:hidden absolute top-0 left-0 w-full bg-black text-white z-10 px-4"
       >
-        <ul class="flex flex-col space-y-6 p-6">
+        <ul class="flex flex-col space-y-6 py-6">
           <li>
-            <a href="#" class="hover:text-blue-800" @click="toggleMenu" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">HOME</a>
+            <a href="#home" class="hover:text-blue-800" @click="toggleMenu">HOME</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-800" @click="toggleMenu" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">ABOUT</a>
+            <a href="#about" class="hover:text-blue-800" @click="toggleMenu">ABOUT</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-800" @click="toggleMenu" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">PROJECTS</a>
+            <a href="#projects" class="hover:text-blue-800" @click="toggleMenu">PROJECTS</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-800" @click="toggleMenu" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">SKILLS</a>
+            <a href="#skills" class="hover:text-blue-800" @click="toggleMenu">SKILLS</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-800" @click="toggleMenu" v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }">CONTACT</a>
+            <a href="#contact" class="hover:text-blue-800" @click="toggleMenu">CONTACT</a>
           </li>
         </ul>
       </div>
     </nav>
-    <main class="flex-grow flex items-center justify-center relative">
-      <div class="text-left text-white relative z-10">
-        <h1 class="text-3xl mb-2">HI THERE 👋, I'M</h1>
-        <h2 class="text-6xl mb-2 font-bold">kehinde.</h2>
-        <p class="text-white-800 text-lg mb-4 font-bold">SOFTWARE DEVELOPER</p>
-        <p class="text-sm mb-6">I'm a design minded front-end developer based in Lagos, Nigeria.</p>
-        <button
-          class="bg-blue-800 text-white px-6 py-2 text-lg font-semibold rounded"
-          v-motion :initial="{ scale: 1 }" :hover="{ scale: 1.1 }"
-        >
-          HIRE ME
-        </button>
-      </div>
-    </main>
+    <router-view class="flex-grow pt-16"></router-view>
   </div>
 </template>
 
@@ -91,8 +78,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
 #app {
   font-family: 'Poppins', sans-serif;
 }
