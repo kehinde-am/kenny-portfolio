@@ -1,18 +1,18 @@
 <template>
   <section id="projects" class="py-20 bg-white-100">
     <h2 class="text-4xl font-bold text-center text-blue-700">Projects</h2>
-    <p class="text-center text-blue-700 mt-4 mb-12">Details about my projects...</p>
+    <p class="text-center text-black mt-4 mb-12">Details about my projects...</p>
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="project in projects" :key="project.id" class="bg-white p-6 rounded-lg shadow-lg">
           <h3 class="text-2xl font-bold mb-4 text-black">{{ project.title }}</h3>
           <img :src="project.image" alt="Project image" class="w-full h-48 object-cover mb-4 rounded-lg">
           <div class="flex flex-wrap mb-4">
-            <span v-for="tech in project.technologies" :key="tech" class="bg-gray-200 text-blue-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+            <span v-for="tech in project.technologies" :key="tech" class="bg-gray-200 text-blue-700 text-xs font-bold mr-3 px-2.5 py-0.5 rounded">
               {{ tech }}
             </span>
           </div>
-          <p class="mb-4">{{ project.description }}</p>
+          <p class="mb-4 text-black">{{ project.description }}</p>
           <div class="flex justify-between items-center">
             <a :href="project.github" target="_blank" class="text-blue-700 hover:text-black-900">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -77,5 +77,11 @@ export default {
 <style scoped>
 section {
   padding: 4rem 0;
+}
+h2{
+  border-bottom: 2px solid #1e00ff;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 </style>

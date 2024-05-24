@@ -6,25 +6,17 @@
       <div class="flex flex-col md:flex-row items-center md:items-start">
         <div class="md:w-2/3 text-black">
           <p class="mb-4">
-            I am Okoye Charles, a frontend/backend developer based in Nigeria. I spend most of my time designing graphics, coding up things for the web, and learning algorithms.
+            I am Kehinde Amusa, a frontend/backend developer based in Nigeria. I spend most of my time designing graphics, coding up things for the web, and learning algorithms.
           </p>
           <p class="mb-4">
             My goal is to deliver—through code—unique, and innovative solutions to complex problems.
           </p>
           <p class="mb-4">
-            If my portfolio interests you, or you need an enthusiastic developer on your team, I am <a href="#" class="text-blue-600 underline">available for hire</a>.
+            If my portfolio interests you, or you need an enthusiastic developer on your team, I am <a href="mailto:kennyamusa@gmail.com" class="text-blue-600 underline">available for hire</a>.
           </p>
           <p class="mb-4">
             Here is an up-to-date list of my most recently used technologies:
           </p>
-          <ul class="list-disc list-inside ml-4 mb-4">
-            <li>Javascript (ES6+)/TypeScript</li>
-            <li>React</li>
-            <li>Next.js 13</li>
-            <li>Express.js (MongoDB)</li>
-            <li>Firebase</li>
-            <li>Ruby on Rails</li>
-          </ul>
           <p class="text-sm mt-8">
             DO YOU HAVE A COOL WEBSITE OR APPLICATION IN MIND?<br>
             I WOULD LOVE TO <a href="#contact" class="text-blue-600 underline">HEAR ABOUT IT</a>
