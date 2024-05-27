@@ -27,7 +27,7 @@ export default {
         },
         {
           name: 'Backend',
-          skills: ['Node.js', 'Express.js', 'Django', 'Ruby on Rails', 'PHP', 'Laravel']
+          skills: ['Node.js', 'Express.js', 'PHP', 'Laravel']
         },
         {
           name: 'Databases',
@@ -35,11 +35,11 @@ export default {
         },
         {
           name: 'Tools & Platforms',
-          skills: ['Git', 'Docker', 'AWS', 'Azure', 'Netlify']
+          skills: ['Git', 'Docker', 'AWS', 'Netlify','Vercel']
         },
         {
           name: 'Programming Languages',
-          skills: ['JavaScript', 'TypeScript', 'Python', 'Ruby', 'PHP', 'Java']
+          skills: ['JavaScript', 'TypeScript', 'Python', 'PHP']
         },
         {
           name: 'Other Skills',
@@ -56,5 +56,13 @@ section {
   padding: 4rem 0;
   background-color: #ffffff; 
 }
+h2 {
+  border-bottom: 2px solid #1e00ff;
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  color: #1e00ff;
+}
+
 </style>
 

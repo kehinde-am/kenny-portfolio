@@ -3,11 +3,11 @@
   <section id="contact" class="py-20">
     <h2 class="text-4xl font-bold text-center text-blue-700">Contact</h2>
     <p class="text-center text-white mt-4">I'd love to hear from you! Fill out the form below to get in touch.</p>
-    <div class="max-w-md mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg">
+    <div class="max-w-md mx-auto mt-8 bg-white p-6 rounded-lg">
       <form @submit.prevent="submitForm">
         <div class="mb-4">
-          <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
-          <input type="text" id="name" v-model="form.name" class="w-full px-3 py-2 border rounded-lg text-gray-900" required />
+          <label for="name" class="block text-gray-700 font-light mb-2">Name</label>
+          <input type="text" id="name" v-model="form.name" class="w-full px-3 py-2 border rounded-lg text-gray-700" required />
         </div>
         <div class="mb-4">
           <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
@@ -55,7 +55,14 @@ section {
 
 input,
 textarea {
-  color: #333;
+  color: #000000;
   background-color: white;
+}
+h2 {
+  border-bottom: 2px solid #1e00ff;
+  display:inline-flex;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  color: #1e00ff;
 }
 </style>

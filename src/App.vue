@@ -1,4 +1,3 @@
-
 <template>
   <div id="app" class="min-h-screen flex flex-col bg-white text-blue-900">
     <nav class="bg-black text-white py-3 fixed w-full z-20">
@@ -21,34 +20,27 @@
             <a href="#contact" class="hover:text-blue-800">CONTACT</a>
           </li>
         </ul>
-        <div class="md:hidden flex items-center">
-          <button @click="toggleMenu" class="focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
+        <button @click="toggleMenu" class="md:hidden focus:outline-none text-2xl text-white p-2 z-30">
+          <span v-if="menuOpen">✖</span>
+          <span v-else>☰</span>
+        </button>
       </div>
-      <div
-        v-if="menuOpen"
-        v-motion :initial="{ opacity: 0 }" :animate="{ opacity: 1 }" :exit="{ opacity: 0 }"
-        class="md:hidden absolute top-0 left-0 w-full bg-black text-white z-10 px-4"
-      >
-        <ul class="flex flex-col space-y-6 py-6">
+      <div v-if="menuOpen" class="md:hidden absolute top-0 left-0 w-full bg-black text-white z-20 px-4 py-3">
+        <ul class="flex flex-col space-y-6">
           <li>
-            <a href="#home" class="hover:text-blue-800" @click="toggleMenu">HOME</a>
+            <a href="#home" @click="toggleMenu" class="block hover:text-blue-800">HOME</a>
           </li>
           <li>
-            <a href="#about" class="hover:text-blue-800" @click="toggleMenu">ABOUT</a>
+            <a href="#about" @click="toggleMenu" class="block hover:text-blue-800">ABOUT</a>
           </li>
           <li>
-            <a href="#projects" class="hover:text-blue-800" @click="toggleMenu">PROJECTS</a>
+            <a href="#projects" @click="toggleMenu" class="block hover:text-blue-800">PROJECTS</a>
           </li>
           <li>
-            <a href="#skills" class="hover:text-blue-800" @click="toggleMenu">SKILLS</a>
+            <a href="#skills" @click="toggleMenu" class="block hover:text-blue-800">SKILLS</a>
           </li>
           <li>
-            <a href="#contact" class="hover:text-blue-800" @click="toggleMenu">CONTACT</a>
+            <a href="#contact" @click="toggleMenu" class="block hover:text-blue-800">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -77,7 +69,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 #app {
   font-family: 'Poppins', sans-serif;
 }
@@ -90,5 +82,19 @@ nav {
 
 main {
   min-height: 100vh;
+}
+
+button {
+  color: white;
+}
+
+button span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: black; 
+  
 }
 </style>
