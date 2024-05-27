@@ -14,9 +14,6 @@
           <p class="mb-4">
             If my portfolio interests you, or you need an enthusiastic developer on your team, I am <a href="mailto:kennyamusa@gmail.com" class="text-blue-600 underline">available for hire</a>.
           </p>
-          <p class="mb-4">
-            Here is an up-to-date list of my most recently used technologies:
-          </p>
           <p class="text-sm mt-8">
             DO YOU HAVE A COOL WEBSITE OR APPLICATION IN MIND?<br>
             I WOULD LOVE TO <a href="#contact" class="text-blue-600 underline">HEAR ABOUT IT</a>

@@ -3,10 +3,10 @@
     <section class="intro mb-16">
       <p class="text-lg">Hi, my name is</p>
       <h1 class="text-6xl font-bold text-blue-700">Kehinde Amusa.</h1>
-      <h3 class="text-5xl font-bold text-gray-800">I embrace the digital world.</h3>
+      <h3 class="text-5xl font-bold text-gray-800">Building innovative solutions for a connected world.</h3>
       <p class="text-lg mt-4 text-blue-700">
-        I can help you build a product, feature, or website. 
-        Look through my work and experience!
+        I specialize in creating cutting-edge web applications and solutions.
+         Explore my portfolio and see how I can help turn your ideas into reality!
       </p>
     </section>
     <div class="flex space-x-4 mb-12">
