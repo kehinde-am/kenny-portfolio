@@ -6,10 +6,10 @@
       <div class="flex flex-col md:flex-row items-center md:items-start">
         <div class="md:w-2/3 text-black">
           <p class="mb-4">
-            I am Kehinde Amusa, a frontend/backend developer based in Nigeria. I spend most of my time designing graphics, coding up things for the web, and learning algorithms.
+            I am Kehinde Amusa, a recent Computer Science Masters graduate eager to make my mark in the tech industry. With a strong foundation in both frontend and backend development, I am passionate about creating innovative and efficient solutions through code.
           </p>
           <p class="mb-4">
-            My goal is to deliver—through code—unique, and innovative solutions to complex problems.
+            During my studies, I dedicated myself to designing graphics, building web applications, and mastering algorithms. My goal is to leverage these skills to deliver unique and effective solutions to complex problems.
           </p>
           <p class="mb-4">
             If my portfolio interests you, or you need an enthusiastic developer on your team, I am <a href="mailto:kennyamusa@gmail.com" class="text-blue-600 underline">available for hire</a>.

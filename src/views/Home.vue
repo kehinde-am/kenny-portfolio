@@ -6,8 +6,8 @@
       <h3 class="text-5xl font-bold text-gray-800">Building innovative solutions for a connected world.</h3>
       <p class="text-lg mt-4 text-blue-700">
         I specialize in creating cutting-edge web applications and solutions.
-         Explore my portfolio and see how I can help turn your ideas into reality!
       </p>
+      <p class="text-lg mt-1 text-blue-700">Explore my portfolio and see how I can help turn your ideas into reality!</p>
     </section>
     <div class="flex space-x-4 mb-12">
       <a href="/path/to/your/document.pdf" download class="bg-blue-800 text-white px-6 py-2 text-lg font-semibold rounded flex items-center">
@@ -49,15 +49,15 @@ export default {
 }
 
 .intro h1 {
-  color: #1e00ff; /* Custom blue color */
+  color: #1e00ff; 
 }
 
 .intro h3 {
-  color: #000000; /* Custom gray color */
+  color: #000000; 
 }
 
 .intro p {
-  color: #000000; /* Custom gray color */
+  color: #000000; 
 }
 
 section {
