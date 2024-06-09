@@ -41,7 +41,7 @@ export default defineComponent({
           id: 1,
           title: 'Mental Health Support chatbot',
           image: project2,
-          technologies: ['TypeScript', 'React JS', 'React-Router', 'Firebase'],
+          technologies: ['TypeScript', 'Nextjs', 'Firebase'],
           description: 'Chatbot built with React, TypeScript and Firebase.',
           github: 'https://github.com/your-repo/slack-clone',
           website: 'https://yourwebsite.com/slack-clone'
@@ -68,7 +68,7 @@ export default defineComponent({
           id: 4,
           title: 'Note App PWA',
           image: project2,
-          technologies: ['HTML', 'CSS', 'JavaScript', 'GatsbyJS'],
+          technologies: ['GatsbyJS', 'Firebase'],
           description: 'Mobile Responsive Notes Taking Website to add, edit, delete and search notes.',
           github: 'https://github.com/your-repo/power-note',
           website: 'https://yourwebsite.com/power-note'
