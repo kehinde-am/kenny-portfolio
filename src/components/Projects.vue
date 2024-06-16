@@ -50,7 +50,7 @@ export default defineComponent({
           id: 2,
           title: 'Blog Platform',
           image: project1,
-          technologies: ['React JS', 'PHP', 'TailwindCSS', 'JSON'],
+          technologies: ['React JS', 'PHP', 'TailwindCSS', 'MySQL'],
           description: 'Single Page Blog Website(Frontend) built with React Hooks, Context API, Codeigniter for Backend.',
           github: 'https://github.com/your-repo/kashkart',
           website: 'https://yourwebsite.com/kashkart'
