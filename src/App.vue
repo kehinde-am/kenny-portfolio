@@ -1,84 +1,100 @@
-<!-- src/App.vue -->
 <template>
-  <div id="app" class="container">
-      <header>
-          <div class="logo">kehinde</div>
-      </header>
-      <main>
-          <h1>HI THERE 👋, I'M</h1>
-          <h2>kenny.</h2>
-          <p class="title">DESIGNER + DEVELOPER</p>
-          <p>I'm a design minded front-end developer based in Lagos, Nigeria.</p>
-          <button class="hire-me">HIRE ME</button>
-      </main>
-      <aside class="sidebar">
-          <div class="decorative-lines"></div>
-      </aside>
+  <div id="app" class="min-h-screen flex flex-col bg-white text-blue-900">
+    <nav class="bg-black text-white py-3 fixed w-full z-20">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <div class="text-2xl font-bold">Ke.</div>
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a href="#" class="hover:text-blue-800">HOME</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-blue-800">ABOUT</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-blue-800">PROJECTS</a>
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-blue-800">SKILLS</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-800">CONTACT</a>
+          </li>
+        </ul>
+        <button @click="toggleMenu" class="md:hidden focus:outline-none text-2xl text-white p-2 z-30">
+          <span v-if="menuOpen">✖</span>
+          <span v-else>☰</span>
+        </button>
+      </div>
+      <div v-if="menuOpen" class="md:hidden absolute top-0 left-0 w-full bg-black text-white z-20 px-4 py-3">
+        <ul class="flex flex-col space-y-6">
+          <li>
+            <a href="#home" @click="toggleMenu" class="block hover:text-blue-800">HOME</a>
+          </li>
+          <li>
+            <a href="#about" @click="toggleMenu" class="block hover:text-blue-800">ABOUT</a>
+          </li>
+          <li>
+            <a href="#projects" @click="toggleMenu" class="block hover:text-blue-800">PROJECTS</a>
+          </li>
+          <li>
+            <a href="#skills" @click="toggleMenu" class="block hover:text-blue-800">SKILLS</a>
+          </li>
+          <li>
+            <a href="#contact" @click="toggleMenu" class="block hover:text-blue-800">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <router-view class="flex-grow pt-16"></router-view>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
+
 export default defineComponent({
   name: 'App',
+  setup() {
+    const menuOpen = ref(false);
+
+    const toggleMenu = () => {
+      menuOpen.value = !menuOpen.value;
+    };
+
+    return {
+      menuOpen,
+      toggleMenu,
+    };
+  },
 });
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #ffffff;
-  color: #3e03ff;
+#app {
   font-family: 'Poppins', sans-serif;
 }
 
-header .logo {
-  color: rgb(26, 1, 252);
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
 
-main h1 {
-  font-size: 1.2rem;
-  margin: 0;
+main {
+  min-height: 100vh;
 }
 
-main h2 {
-  font-size: 3rem;
-  margin: 0.5rem 0;
+button {
+  color: white;
 }
 
-.title {
-  color: #3e03ff;
-  font-size: 1rem;
-  margin: 1rem 0;
+button span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: black; 
+  
 }
-
-.hire-me {
-  background-color: #3e03ff;
-  color: #000;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.sidebar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
 </style>
