@@ -39,39 +39,21 @@ export default defineComponent({
       projects: [
         {
           id: 1,
-          title: 'Mental Health Support chatbot',
-          image: project2,
-          technologies: ['TypeScript', 'Nextjs', 'Firebase'],
-          description: 'Chatbot built with React, TypeScript and Firebase.',
-          github: 'https://github.com/your-repo/slack-clone',
-          website: 'https://yourwebsite.com/slack-clone'
-        },
-        {
-          id: 2,
           title: 'Blog Platform',
           image: project1,
           technologies: ['React JS', 'PHP', 'TailwindCSS', 'MySQL'],
           description: 'Single Page Blog Website(Frontend) built with React Hooks, Context API, Codeigniter for Backend.',
-          github: 'https://github.com/your-repo/kashkart',
-          website: 'https://yourwebsite.com/kashkart'
+          github: 'https://github.com/kehinde-am/blog-platform-frontend',
+          website: ''
         },
         {
-          id: 3,
-          title: 'Crypto Money',
-          image: project2,
-          technologies: ['React JS', 'TypeScript', 'CSS', 'CoinGecko API'],
-          description: 'Mobile Responsive Crypto Currency Tracker using React Hooks and CoinGecko API.',
-          github: 'https://github.com/your-repo/crypto-money',
-          website: 'https://yourwebsite.com/crypto-money'
-        },
-        {
-          id: 4,
+          id: 2,
           title: 'Note App PWA',
           image: project2,
           technologies: ['GatsbyJS', 'Firebase'],
           description: 'Mobile Responsive Notes Taking Website to add, edit, delete and search notes.',
-          github: 'https://github.com/your-repo/power-note',
-          website: 'https://yourwebsite.com/power-note'
+          github: 'https://github.com/kehinde-am/note-app-pwa',
+          website: 'https://notesweb-pwa.netlify.app/'
         }
       ]
     };

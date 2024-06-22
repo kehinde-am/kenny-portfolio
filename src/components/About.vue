@@ -1,4 +1,4 @@
-<!-- src/components/About.vue -->
+
 <template>
   <section id="about" class="py-20 bg-white text-blue-700">
     <div class="container mx-auto px-4">
