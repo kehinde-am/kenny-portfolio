@@ -10,7 +10,7 @@
       <p class="text-lg mt-1 text-blue-700">Explore my portfolio and see how I can help turn your ideas into reality!</p>
     </section>
     <div class="flex space-x-4 mb-12">
-      <a href="/path/to/your/document.pdf" download class="bg-blue-800 text-white px-6 py-2 text-lg font-semibold rounded flex items-center">
+      <a href="../assets/resume.pdf" download class="bg-blue-800 text-white px-6 py-2 text-lg font-semibold rounded flex items-center">
         <i class="fas fa-download mr-2"></i> Download Resume
       </a>
     </div>
