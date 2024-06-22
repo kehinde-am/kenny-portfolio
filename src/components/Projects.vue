@@ -29,8 +29,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import project1 from '@/assets/project1.jpg';
-import project2 from '@/assets/project2.jpg';
+import project1 from '@/assets/project1.png';
+import project2 from '@/assets/project2.png';
 
 export default defineComponent({
   name: 'Projects',
